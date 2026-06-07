@@ -106,7 +106,7 @@ function parseTimeMinutes(timeStr) {
   const t = timeStr.trim();
   const num = parseFloat(t);
   if (!isNaN(num) && num >= 0 && num < 1) return Math.round(num * 24 * 60);
-  const m = t.match(/^(\d{1,2}):(\d{2})\s*(AM|PM)?$/i);
+  const m = t.match(/^(\d{1,2}):(\d{2})(?::\d{2})?\s*(AM|PM)?$/i);
   if (m) {
     let h = parseInt(m[1]);
     const min = parseInt(m[2]);
