@@ -4,8 +4,8 @@ const SHEET_ID = '1qi-c7I46d9lMgPD4sf4Oamo1aLeKwNZ2m-u2d6JqoP4';
 // Set WINNER_MODE to true and fill in BIRTH_DATETIME when Charlie arrives.
 // Months are 0-indexed: Jan=0, Feb=1, ... Jun=5, Jul=6
 // new Date(year, month, day, hour, minute)  ← all Eastern time
-const WINNER_MODE = false;
-const BIRTH_DATETIME = null; // e.g. new Date(2026, 5, 14, 8, 32) = June 14 at 8:32 AM ET
+const WINNER_MODE = true;
+const BIRTH_DATETIME = new Date(2026, 4, 29, 23, 32); // May 29 at 11:32 PM ET
 // ─────────────────────────────────────────────────────────────────────────────
 
 let entries = [];
